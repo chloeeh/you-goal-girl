@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Goal, User } = require('../models');
+const { User, Goal } = require('../../models');
 const withAuth = require('../utils/auth');
 
 // Get all projects and JOIN with user data
@@ -15,7 +15,7 @@ router.get('/', withAuth, async (req, res) => {
     });
 
     const goals = goalData.map((goal) => goal.get({ plain: true }));
-    res.render('goalpage', {
+    res.render('goals', {
         goals,
         logged_in: req.session.logged_in
     });
@@ -38,7 +38,7 @@ router.get('/goal/:id', withAuth, async (req, res) => {
 
     const goal = goalData.get({ plain: true });
 
-    res.render('goal', {
+    res.render('goals', {
         ...goal,
         logged_in: req.session.logged_in
     });
@@ -49,7 +49,7 @@ router.get('/goal/:id', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-        res.redirect('/goal');
+        res.redirect('/goals');
         return;
     }
     res.render('login');
