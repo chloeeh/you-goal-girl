@@ -1,0 +1,57 @@
+{{#if loggedIn}}
+<section class="user">
+  {{!-- <img src="/images/{{painting.filename}}" alt="{{painting.description}}"> --}}
+  <a href="/{{user.name}}">Welcome!</a>
+  <div class="user-details">
+    <h3>{{user.name}}</h3>
+  </div>
+</section>
+{{else}}
+<a href="/login">You must login first to view this page</a>
+{{/if}}
+
+{{#each goals as |goal|}}
+{{> goal-details}}
+{{/each}}
+
+{{!-- ADD A NEW GOAL --}}
+<div class="edit-goal-container">
+  <h2>
+    Update Goal
+  </h2>
+  <form class="edit-goal-form">
+    <label for="goal_name">
+      Goal Name:
+    </label>
+    <br />
+    <textarea id="goal_name" name="goal_name" rows="2" cols="30">
+      {{dish_name}}
+    </textarea>
+    <br />
+    <label for="description">
+      Description:
+    </label>
+    <br />
+    <textarea id="description" name="description" rows="5" cols="30">
+      {{description}}
+    </textarea>
+    <br />
+    <label for="start_date">
+      Start Date:
+    </label>
+    <br />
+    <textarea id="start_date" name="start_date" rows="2" cols="30">
+      {{start_date}}
+    </textarea>
+    <br />
+    <textarea id="end_date" name="end_date" rows="2" cols="30">
+      {{end_date}}
+    </textarea>
+    <br />
+    <br />
+    <button type="submit" value="Submit">
+      Submit
+    </button>
+  </form>
+</div>
+<script src="/js/add-goal.js"></script>
