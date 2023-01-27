@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Goal Girl</title>
+  <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>&#1F33A Hey, chica! What's the 411? &#1F33A</h1>
+  </header>
+  {{!-- <nav> --}}
+    <section class="flex-row justify-center">
+      {{!-- Home page shows title and login button
+      If user logs in and session is not over, login button turns to logout button --}}
+    <a href="/">Home</a>
+    {{#if loggedIn}}
+    <a href="/goals">My Goals</a> |
+        <button class="no-button" 
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+  {{!-- </nav> --}}
+  </section>
+  <main>
+    <aside>
+      <h2>You got it!</h2>
+    </aside>
+    <div class="gallery">
+      {{{body}}}
+    </div>
+  </main>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
