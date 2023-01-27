@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Update Portfolio",
+        "description": "Make an updated portfolio with most recent projects and about me section.",
+        "start_date": "2023-01-26 21:00:00",
+        "end_date": "2023-04-02 21:00:00",
+        "user_id": 1 
+    },
+    {
+        "name": "Commissioned Art",
+        "description": "Hang my paintings in a gallery.",
+        "start_date": "2023-01-26 21:00:00",
+        "end_date": "2023-12-31 21:00:00",
+        "user_id": 2 
+    },
+    {
+        "name": "Lose Weight!",
+        "description": "Lose 10 more pounds by the end of bootcamp.",
+        "start_date": "2023-01-26 21:00:00",
+        "end_date": "2023-04-05 21:00:00",
+        "user_id": 3 
+    }
+]
