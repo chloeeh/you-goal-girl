@@ -1,18 +1,19 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
-  const dish_name = document.querySelector('#dish_name').value;
+  const dish_name = document.querySelector('#goal_name').value;
   const description = document.querySelector('#description').value;
-  const guest_name = document.querySelector('#guest_name').value;
-  const has_nuts = document.querySelector('#has_nuts:checked') ? true : false;
+  const start_date = document.querySelector('#start_date').value;
+  const end_date = document.querySelector('#end_dated').value;
+  // check this https://stackoverflow.com/questions/70325186/rendering-username-or-id-in-the-url-with-express-routing
 
-  const response = await fetch(`/api/dish`, {
+  const response = await fetch(`/goal`, {
     method: 'POST',
     body: JSON.stringify({
-      dish_name,
+      goal_name,
       description,
-      guest_name,
-      has_nuts,
+      start_date,
+      end_date,
     }),
     headers: {
       'Content-Type': 'application/json',
@@ -20,12 +21,12 @@ async function newFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/');
+    document.location.replace('/goal');
   } else {
-    alert('Failed to add dish');
+    alert('Failed to add goal');
   }
 }
 
 document
-  .querySelector('.new-dish-form')
+  .querySelector('.new-goal-form')
   .addEventListener('submit', newFormHandler);

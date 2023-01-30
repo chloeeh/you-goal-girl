@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
   justify-content: flex-start;
   background-color: var(--quatrinary);
+  /* background-image: url('../assets/perGoal.jpg'); */
 }
 
 header {
@@ -161,4 +162,34 @@ nav {
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+}
+
+/* BUTTONS */
+.my-login {
+  font-size: large;
+  background-color: orange;
+  color: darkmagenta;
+  border-style: solid;
+  border-color: darkmagenta;
+  border-radius: 10px;
+}
+
+/* TABLE */
+table {
+  border-radius: 15px;
+  /* rounds only the corners of the table */
+  overflow:hidden
+}
+td {
+  text-align: left;
+  color: white;
+}
+
+tr {
+  background-color:darkmagenta;
+  color:white;
+}
+th {
+  background-color: blue;
+  color: white;
 }

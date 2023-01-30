@@ -1,23 +1,35 @@
-<div class="goal-card">
-  <div class="goal-card-header">
-    {{goal_name}}
+
+<section class = "d-flex flex-row">
+<img class="z-1 img-fluid position-absolute opacity-50" src="/assets/perGoal.jpg" alt="1990s themed image"/>
+  <div class = "flex-row row-3 align-items-center">
+    <div class=" flex-col goal-card my-3 justify-align-center z-3 position-relative">
+
+  {{!-- how to center the damn table... --}}
+      <div class="row card-body table-responsive">
+        <table class = "table table-bordered text-center">
+          <tr id="round-corner-top">
+            <th colspan="2">{{name}}</th>
+          </tr>
+        <tr>
+          <td>Description</td>
+          <td>{{description}}</td>
+        </tr>
+        <tr>
+          <td>Date Entered</td>
+          <td>{{start_date}}</td>
+        </tr>
+        <tr>
+          <td id="round-corner-b-l">Deadline</td>
+          <td id="round-corner-b-r">{{end_date}}</td>
+        </tr>
+        </table>
+      </div>
+
+    </div>
   </div>
-  <span for="img" aria-label="money">🌺</span>
-  <div class="card-body">
-    <p>
-      Description:
-      {{description}}
-    </p>
-    <p>
-      Date Entered:
-      {{start_date}}
-    </p>
-    <p>
-      Deadline:
-      {{end_date}}
-    </p>
-  </div>
-</div>
+</section>
+
+
 
 <!-- This is the form for updating a dish. According to MVC framework, what is this form responsible for? -->
 <!-- This form is responsible for the UI logic, or the components in the View that the user will interact with. -->

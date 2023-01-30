@@ -14,6 +14,23 @@
 {{> goal-details}}
 {{/each}}
 
+{{!-- Hopefully creates a dynamic table --}}
+{{!-- {{#each goals as |goal|}}
+<div class="card-body">
+    <table class = "table table-striped table-bordered text-center font-weight-bold table-hover">
+    <tr>
+      <td class="text-center" >#</td>
+      <td class="text-left" >{{goal.id}}</td>
+    </tr>
+    <tr>
+      <td class="text-center" >Goal Name</td>
+      <td class="text-left" >{{goal.name}}</td>
+    </tr>
+    </table>
+  </div>
+  {{/each}} --}}
+
+
 {{!-- ADD A NEW GOAL --}}
 <div class="edit-goal-container">
   <h2>
@@ -25,7 +42,7 @@
     </label>
     <br />
     <textarea id="goal_name" name="goal_name" rows="2" cols="30">
-      {{dish_name}}
+      {{goal_name}}
     </textarea>
     <br />
     <label for="description">
