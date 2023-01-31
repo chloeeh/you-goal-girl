@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Goal } = require('../models');
 const withAuth = require('../utils/auth');
 
 // Landing page
@@ -17,7 +17,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Post }],
+      include: [{ model: Goal }],
     });
 
     const user = userData.get({ plain: true });
