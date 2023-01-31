@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>You Goal Girl</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-</head>
-
-<body class="container-fluid">
-  {{!-- {{ > page-header}} --}}
-    <section class="flex-row justify-center">
+ <section class="flex-row justify-center">
       {{!-- Home page shows title and login button
       If user logs in and session is not over, login button turns to logout button --}}
     {{!-- <a href="/">Home | </a> --}}
@@ -20,7 +6,7 @@
     <div class="w-100">
       <div class="row">
         <header>
-          <h1>🌺 Hey, {{user.name}}! What's the 411? 🌺</h1>
+          <h1>🌺 Hey, {{name}}! What's the 411? 🌺</h1>
         </header>
       </div>
       <div>
@@ -48,19 +34,3 @@
         <a href="/login"> Login</a>
       </div> --}}
     {{/if}}
-  {{!-- </nav> --}}
-  </section>
-  <main>
-    {{!-- <aside>
-      <h2>You got it!</h2>
-    </aside> --}}
-    <div class="goal">
-      {{{body}}}
-    </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
-
-</html>
