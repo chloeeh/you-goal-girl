@@ -1,7 +1,6 @@
- <section class="flex-row justify-center">
+ <section class="d-flex flex-row justify-center">
       {{!-- Home page shows title and login button
       If user logs in and session is not over, login button turns to logout button --}}
-    {{!-- <a href="/">Home | </a> --}}
     {{#if loggedIn}}
     <div class="w-100">
       <div class="row">
@@ -24,7 +23,7 @@
     </div>
     <div>
       <div class="row text-center my-2">
-        <a class="my-login" href="/login"> Login</a>
+        <a class="my-login justify-content-center" href="/login"> Login</a>
       </div>
     </div>
       {{!-- <header>
