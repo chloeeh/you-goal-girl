@@ -34,18 +34,6 @@ main {
   flex-grow: 1;
 }
 
-aside {
-  flex: 0;
-  background-color: var(--tertiary);
-  padding: 80px;
-  text-align: left;
-  color: var(--light);
-}
-
-nav {
-  display: flex;
-  background-color: var(--secondary);
-}
 
 .menu-container {
   display: flex;
@@ -156,12 +144,20 @@ nav {
   text-align: center;
 }
 
-/* LAYOUT */
+/* LAYOUT
 .container {
   display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
+  /* flex-flow: column wrap; */
+  /* align-content: flex-start;
   align-items: center;
+} */ */
+.container-fluid{
+  padding: 0;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
 }
 
 /* BUTTONS */
@@ -200,3 +196,6 @@ th {
   color: #4B0082;
 }
 
+.login-container {
+  border-style: dashed;
+}
