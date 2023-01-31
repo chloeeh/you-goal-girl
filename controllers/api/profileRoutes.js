@@ -7,16 +7,19 @@ const withAuth = require('../../utils/auth');
 router.get('/', async (req, res) => {
   try {
     const goalData = await Goal.findAll({
-        include: [
-            {
-            model: Goal,
-            attributes: ['username'],
-            },
-        ],
+      where: {
+        user_id: req.session.user_id
+      },
+      attributes: [
+        'id',
+        'name',
+        'description',
+        'start_date',
+        'end_date'
+      ],
     });
-
     const goals = goalData.map((goal) => goal.get({ plain: true }));
-    res.render('goals', {
+    res.render('profile', {
         goals,
         logged_in: req.session.logged_in
     });
@@ -53,12 +56,12 @@ router.get('/goal/:id', async (req, res) => {
 // POST/CREATE new Post
 router.post('/', async (req, res) => {
     try {
-      const newPost = await Post.create({
+      const newGoal = await Goal.create({
         ...req.body,
         user_id: req.session.user_id,
       });
   
-      res.status(200).json(newPost);
+      res.status(200).json(newGoal);
     } catch (err) {
       res.status(400).json(err);
     }
@@ -68,19 +71,19 @@ router.post('/', async (req, res) => {
   // DELETE Post
   router.delete('/:id', async (req, res) => {
     try {
-      const postData = await Post.destroy({
+      const newGoal = await Goal.destroy({
         where: {
           id: req.params.id,
           user_id: req.session.user_id,
         },
       });
   
-      if (!postData) {
+      if (!newGoal) {
         res.status(404).json({ message: 'This post no longer exists!' });
         return;
       }
   
-      res.status(200).json(postData);
+      res.status(200).json(newGoal);
     } catch (err) {
       res.status(500).json(err);
     }
