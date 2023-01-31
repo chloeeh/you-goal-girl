@@ -1,11 +1,11 @@
  <section class="d-flex flex-row justify-center">
       {{!-- Home page shows title and login button
       If user logs in and session is not over, login button turns to logout button --}}
-    {{#if loggedIn}}
+    {{#if logged_in}}
     <div class="w-100">
-      <div class="row">
+      <div class="flex-row">
         <header>
-          <h1>🌺 Hey, {{username}}! What's the 411? 🌺</h1>
+          <h1>🌺 Hey, {{user.username}}! What's the 411? 🌺</h1>
         </header>
       </div>
       <div>
@@ -33,3 +33,4 @@
         <a href="/login"> Login</a>
       </div> --}}
     {{/if}}
+    </section>
