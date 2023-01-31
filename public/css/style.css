@@ -199,3 +199,21 @@ th {
 .login-container {
   border-style: dashed;
 }
+
+/* styling for homepage animation */
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  font-family: shrikhand;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .animate {
+  display: inline-block;
+  line-height: 1em;
+}
+.ml15 .animate .btn{
+  display: inline-block;
+  line-height: 1em;
+}
