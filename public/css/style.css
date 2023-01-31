@@ -193,3 +193,9 @@ th {
   background-color: blue;
   color: white;
 }
+
+/* 404 TEXT */
+.not-found {
+  font-size: large;
+  color: #4B0082;
+}
