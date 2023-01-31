@@ -1,9 +1,9 @@
 {{#if loggedIn}}
 <section class="user">
   {{!-- <img src="/images/{{painting.filename}}" alt="{{painting.description}}"> --}}
-  <a href="/{{user.name}}">Welcome!</a>
+  <a href="/{{user.username}}">Welcome!</a>
   <div class="user-details">
-    <h3>{{user.name}}</h3>
+    <h3>{{user.username}}</h3>
   </div>
 </section>
 {{else}}

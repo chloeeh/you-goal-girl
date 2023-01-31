@@ -1,7 +1,7 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
-  const dish_name = document.querySelector('#goal_name').value;
+  const goal_name = document.querySelector('#goal_name').value;
   const description = document.querySelector('#description').value;
   const start_date = document.querySelector('#start_date').value;
   const end_date = document.querySelector('#end_dated').value;

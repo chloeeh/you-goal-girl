@@ -14,7 +14,7 @@ async function editFormHandler(event) {
   // The Controller will handle this 'put' request.
   // check this https://stackoverflow.com/questions/70325186/rendering-username-or-id-in-the-url-with-express-routing
 
-  const response = await fetch(`/api/{{user.name}}/${id}`, {
+  const response = await fetch(`/api/{{user.username}}/${id}`, {
     method: 'PUT',
     body: JSON.stringify({
       goal_name,
