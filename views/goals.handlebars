@@ -8,7 +8,7 @@
       <div class="row card-body table-responsive">
         <table class = "table table-bordered text-center">
           <tr id="round-corner-top">
-            <th colspan="2">{{username}}</th>
+            <th colspan="2">{{name}}</th>
           </tr>
         <tr>
           <td>Description</td>
@@ -16,11 +16,11 @@
         </tr>
         <tr>
           <td>Date Entered</td>
-          <td>{{start_date}}</td>
+          <td>{{format_date start_date}}</td>
         </tr>
         <tr>
           <td id="round-corner-b-l">Deadline</td>
-          <td id="round-corner-b-r">{{end_date}}</td>
+          <td id="round-corner-b-r">{{format_date end_date}}</td>
         </tr>
         </table>
       </div>
