@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 
-// Creating a new user
+// Create a new user
 router.post('/', async (req, res) => {
     try {
       const userData = await User.create({
@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
     }
   });
 
-// Validate login of user
+// Validate login credentials of user
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({
@@ -30,7 +30,7 @@ router.post('/login', async (req, res) => {
         email: req.body.email 
       },
     });
-
+    
     if (!userData) {
       res
         .status(400)

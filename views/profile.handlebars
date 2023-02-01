@@ -1,25 +1,11 @@
-{{!-- <section class="container d-flex flex-column w-100"> --}}
-  {{!-- <div class="flex-column"> --}}
+
     {{> page-header}}
-  {{!-- </div> --}}
-
-
-{{!-- {{#if logged_in}}
-<section class="user container-fluid">
-  <h2>Welcome, {{user.username}}!</h2>
-</section>
-{{else}}
-<a href="/login">You must login first to view this page</a>
-{{/if}} --}}
 
   <div class="flex-column justify-content-center">
     {{#each goals as |goal|}}
     {{> goal-details}}
     {{/each}}
   </div>
-
-
-
 
   {{!-- ADD A NEW GOAL --}}
   <div class="add-goal-container justify-content-center flex-column">
@@ -61,5 +47,5 @@
       </button>
     </form>
   </div>
-  {{!-- </section> --}}
+ 
   <script src="/js/add-goal.js"></script>

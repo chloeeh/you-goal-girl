@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User, Goal } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// Get all projects and JOIN with user data
+// Get all goals and JOIN with user data
 router.get('/', withAuth, async (req, res) => {
   try {
     const goalData = await Goal.findAll({
@@ -52,7 +52,7 @@ router.get('/goal/:id', withAuth, async (req, res) => {
     }
 });
 
-// POST/CREATE new Post
+// POST/CREATE new goal
 router.post('/', withAuth, async (req, res) => {
     try {
       const newGoal = await Goal.create({
