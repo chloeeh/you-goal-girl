@@ -3,19 +3,19 @@
       If user logs in and session is not over, login button turns to logout button --}}
     {{#if logged_in}}
     <div class="w-100">
-      <div class="flex-row">
+      <div>
         <header>
           <h1>🌺 Hey, {{user.username}}! What's the 411? 🌺</h1>
         </header>
       </div>
       <div>
-        <a href="/api/profile/goal">My Goals</a>
+        <a href="/api/profile/">My Goals</a>
         <button class="no-button" id="logout" class="btn-no-style">Logout</button>
       </div>
     </div>
     {{else}}
     <div class="w-100">
-      <div class="row">
+      <div>
         <header>
           <h1>🌺 Hey, chica! What's the 411? 🌺</h1>
         </header>
