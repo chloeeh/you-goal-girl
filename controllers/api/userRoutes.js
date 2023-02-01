@@ -50,7 +50,7 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      res.json({ message: 'You are now logged in!' });
+      res.json({ user: userData, message: 'You are now logged in!' });
     });
 
   } catch (err) {
@@ -60,14 +60,14 @@ router.post('/login', async (req, res) => {
 });
 
 // Destroy session on logout of user
+// https://stackoverflow.com/questions/6528876/how-to-redirect-404-errors-to-a-page-in-expressjs
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
     });
   } else {
-    res.status(404).end();
-    res.redirect('/404');
+    res.status(404).render("404");
   }
 });
 
