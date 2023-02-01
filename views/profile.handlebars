@@ -1,51 +1,48 @@
+<div class="container">
+  <div class=" row">
+    <div class="col align-center">
+      <h2>My Goals: </h2>
+        {{#each goals as |goal|}}
+        {{> goal-details}}
+        {{/each}}
+    </div>
 
-    {{> page-header}}
+    {{!-- add new goal --}}
+    <div class="col add-goal-container">
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <h2>Add a New Goal</h2>
+              <form class="add-goal-form">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="goal name here" id="goal_name" name="goal_name" rows="1" cols="30">{{goal_name}}</textarea>
+                  <label for="goal_name">Goal Name</label>
+                </div>
+                <br />
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="description" id="description" name="description" rows="5" cols="30">{{description}}</textarea>
+                  <label for="description">Description</label>
+                </div>
+                <br />
+                <div class="">
+                  <label for="start_date">Start Date: </label>
+                  <input type="date" placeholder="start date" id="start_date" name="start_date" rows="3" cols="30">{{start_date}}</input>
+                </div>
+                <br />
+                <div class="">
+                  <label for="end_date">End Date: </label>
+                  <input type="date" id="end_date" name="end_date" rows="3" cols="30">{{end_date}}</input>
+                </div>
+                <br />
+                <button class="btn btn-danger" type="submit" value="Submit">Submit</button>
+              </form>
+          </div>
+        </div>
+      </div>
 
-  <div class="flex-column justify-content-center">
-    {{#each goals as |goal|}}
-    {{> goal-details}}
-    {{/each}}
+    </div>
   </div>
-
-  {{!-- ADD A NEW GOAL --}}
-  <div class="add-goal-container justify-content-center flex-column">
-    <h2>
-      Add a New Goal
-    </h2>
-    <form class="add-goal-form">
-      <label for="goal_name">
-        Goal Name:
-      </label>
-      <br />
-      <textarea id="goal_name" name="goal_name" rows="2" cols="30">
-        {{goal_name}}
-      </textarea>
-      <br />
-      <label for="description">
-        Description:
-      </label>
-      <br />
-      <textarea id="description" name="description" rows="5" cols="30">
-        {{description}}
-      </textarea>
-      <br />
-      <label for="start_date">
-        Start Date:
-      </label>
-      <br />
-      <input type="date" id="start_date" name="start_date" rows="2" cols="30">
-        {{start_date}}
-      </textarea>
-      <br />
-      <input type="date" id="end_date" name="end_date" rows="2" cols="30">
-        {{end_date}}
-      </textarea>
-      <br />
-      <br />
-      <button type="submit" value="Submit">
-        Submit
-      </button>
-    </form>
-  </div>
+</div>
+  
  
   <script src="/js/add-goal.js"></script>

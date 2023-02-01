@@ -1,6 +1,7 @@
 :root {
-  --primary: #389393;
-  --secondary: #f5a25d;
+  --primary: #b9bafb;
+  /* --secondary: #f5a25d; */
+  --secondary: #f36079;
   --tertiary: #fa7f72;
   --quatrinary: #6c6b67;
   --light: #ebebeb;
@@ -18,7 +19,7 @@ body {
 }
 
 body {
-  font-family: Arial;
+  font-family: Shrikhand;
   /* margin: 0; */
   /* display: flex; */
   flex-direction: row;
@@ -81,7 +82,7 @@ main {
 
 /* BUTTONS */
 /* .my-login { */
-button {
+button .btn {
   font-size: large;
   background-color: orange;
   color: darkmagenta;

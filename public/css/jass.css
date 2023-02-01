@@ -888,7 +888,7 @@
   }
   
   .text-danger {
-    color: #e64c66 !important;
+    color: #ee8294 !important;
   }
   
   .text-default {
@@ -925,7 +925,7 @@
   }
   
   .bg-danger {
-    background-color: #e64c66 !important;
+    background-color: #ee8294 !important;
   }
   
   .bg-light {
@@ -978,14 +978,14 @@
     font-size: 1rem;
     border-radius: 0.3rem;
     border: 1px solid transparent;
-    outline: none;
+    /* outline: none; */
     color: #1a1a1a;
-    background-color: #aeaeae;
+    background-color: #ffb048;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   }
   
   .btn:hover {
-    background-color: #cecece;
+    background-color: #ffb048;
   }
   
   .btn.btn-squared {
@@ -1018,12 +1018,12 @@
   }
   
   .btn.btn-danger {
-    background-color: #e64c66;
+    background-color: #ee8294;
     color: #ffffff;
   }
   
   .btn.btn-danger:hover {
-    background-color: #ee8294;
+    background-color: #f5a6b3;
   }
   
   .btn.btn-info {
@@ -1131,13 +1131,13 @@
     background-position-x: 98%;
     background-position-y: 50%;
   }
-  
+/*   
   form label,
   form .form-label {
     display: inline-block;
     font-size: 1.2rem;
     margin: 0.625rem 0 0.25rem 0.3rem;
-  }
+  } */
   
   form .form-input {
     width: 100%;

@@ -13,3 +13,10 @@ const logout = async () => {
 };
 
 document.querySelector('#logout').addEventListener('click', logout);
+
+//eventlistener for 'My Goals' button
+const myGoals = () => {
+    document.location.replace('/api/profile');
+};
+
+document.querySelector('.goals-btn').addEventListener('click', myGoals);
