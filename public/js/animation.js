@@ -1,15 +1,15 @@
-anime.timeline({loop: true})
+anime.timeline()
     .add({
         targets: '.ml15 .animate',
         scale: [14,1],
         opacity: [0,1],
         easing: "easeOutCirc",
-        duration: 800,
+        // duration: 800,
         delay: (el, i) => 800 * i
     }).add({
-        targets: '.ml15',
+        targets: '.ml15 .animate',
         opacity: 0,
-        duration: 1000,
+        // duration: 1000,
         easing: "easeOutExpo",
         delay: 1000
     
