@@ -205,7 +205,7 @@ th {
 }
 
 /* styling for homepage animation */
-.ml15 {
+.anime-text {
   font-weight: 800;
   font-size: 3.8em;
   font-family: shrikhand;
@@ -213,11 +213,11 @@ th {
   letter-spacing: 0.5em;
 }
 
-.ml15 .animate {
+.anime-text .animate .start-btn {
   display: inline-block;
   line-height: 1em;
 }
-.ml15 .animate .btn{
+.anime-text .animate .start-btn {
   display: inline-block;
   line-height: 1em;
 }
