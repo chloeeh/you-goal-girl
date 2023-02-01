@@ -1,4 +1,4 @@
- <section class="d-flex flex-row justify-center">
+ {{!-- <section class="d-flex flex-row justify-center"> --}}
       {{!-- Home page shows title and login button
       If user logs in and session is not over, login button turns to logout button --}}
     {{#if logged_in}}
@@ -8,13 +8,13 @@
           <h1>🌺 Hey, {{user.username}}! What's the 411? 🌺</h1>
         </header>
       </div>
-      <div class="row">
-        <div class="my-2 col">
-          <button type="button" class="btn goals-btn btn-danger ">My Goals</button>
-        </div>
-        <div class="my-2 col">
-          <button type="button" class="btn btn-danger" id="logout">Logout</button>
-        </div>
+      <div class="container">
+        {{!-- <div class="row ">
+          <div class="m-1 justify-center col"> --}}
+            <button type="button" class="btn goals-btn btn-danger ">My Goals</button>
+            <button type="button" class="btn btn-danger" id="logout">Logout</button>
+          {{!-- </div>
+        </div> --}}
       </div>
     </div>
     {{else}}

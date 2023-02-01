@@ -1,5 +1,5 @@
 :root {
-  --primary: #b9bafb;
+  --primary: #b9bbfd;
   /* --secondary: #f5a25d; */
   --secondary: #f36079;
   --tertiary: #fa7f72;
@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  font-family: Shrikhand;
+  font-family: Arial;
   /* margin: 0; */
   /* display: flex; */
   flex-direction: row;
