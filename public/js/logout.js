@@ -1,3 +1,4 @@
+// Ends user session and redirects to homepage
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
         method: 'POST',

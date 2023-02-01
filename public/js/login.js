@@ -1,3 +1,4 @@
+// Handles the user input for the login form
 const loginFormHandler = async (event) => {
     event.preventDefault();
 
@@ -19,6 +20,7 @@ const loginFormHandler = async (event) => {
     }
 };
 
+// Handles the user input for the signup form
 const signupFormHandler = async (event) => {
     event.preventDefault();
 
@@ -41,10 +43,12 @@ const signupFormHandler = async (event) => {
     }
 };
 
+// EventListener for login submit button
 document
     .querySelector('.login-form')
     .addEventListener('submit', loginFormHandler);
 
+// EventListener for signup submit button
 document
     .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);
