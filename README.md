@@ -1,7 +1,7 @@
 # You Goal Girl!
 
 <!-- add license badge -->
-## Table of contents
+## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
