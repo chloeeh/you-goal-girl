@@ -3,6 +3,7 @@ const { User, Goal } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // TODO: Remember to include withAuth,
+// TODO: /goal or / ??
 // Get all projects and JOIN with user data
 router.get('/', async (req, res) => {
   try {
@@ -67,26 +68,26 @@ router.post('/', async (req, res) => {
     }
   });
   
-  // TODO: Remember to include withAuth,
-  // DELETE Post
-  router.delete('/:id', async (req, res) => {
-    try {
-      const newGoal = await Goal.destroy({
-        where: {
-          id: req.params.id,
-          user_id: req.session.user_id,
-        },
-      });
+  // // TODO: Remember to include withAuth,
+  // // DELETE Post
+  // router.delete('/goal/:id', async (req, res) => {
+  //   try {
+  //     const goalData = await Goal.destroy({
+  //       where: {
+  //         id: req.params.id,
+  //         user_id: req.session.user_id,
+  //       },
+  //     });
   
-      if (!newGoal) {
-        res.status(404).json({ message: 'This post no longer exists!' });
-        return;
-      }
+  //     if (!goalData) {
+  //       res.status(404).json({ message: 'This post no longer exists!' });
+  //       return;
+  //     }
   
-      res.status(200).json(newGoal);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+  //     res.status(200).json(goalData);
+  //   } catch (err) {
+  //     res.status(500).json(err);
+  //   }
+  // });
 
 module.exports = router;
