@@ -1,13 +1,13 @@
 anime.timeline({loop: true})
     .add({
-        targets: '.ml15 .animate',
+        targets: '.anime-text .animate',
         scale: [14,1],
         opacity: [0,1],
         easing: "easeOutCirc",
-        duration: 800,
-        delay: (el, i) => 800 * i
+        duration: 600,
+        delay: (el, i) => 600 * i
     }).add({
-        targets: '.ml15',
+        targets: '.anime-text .animate',
         opacity: 0,
         duration: 1000,
         easing: "easeOutExpo",
@@ -17,7 +17,7 @@ anime.timeline({loop: true})
 
 //eventlistener to handle 'get started'
 const getStarted = () => {
-    document.location.replace('/');
+    document.location.replace('/login');
 };
 
-document.querySelector('#logout').addEventListener('click', logout);
+document.querySelector('.start-btn').addEventListener('click', getStarted);

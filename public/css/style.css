@@ -8,24 +8,33 @@
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
+/* background image properties */
+body { 
+  background: url(../assets/background2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
   font-family: Arial;
-  margin: 0;
-  display: flex;
+  /* margin: 0; */
+  /* display: flex; */
   flex-direction: row;
   min-height: 100vh;
-  justify-content: flex-start;
-  background-color: var(--quatrinary);
+  /* justify-content: flex-start; */
+  /* background-color: var(--quatrinary); */
   /* background-image: url('../assets/perGoal.jpg'); */
 }
 
 header {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   background: var(--primary);
   color: var(--secondary);
   border-bottom-style: solid;
+  width: 100%;
 }
 
 main {
@@ -159,8 +168,7 @@ main {
 }
 .img-fluid {
   max-width: 100%;
-  height: auto;
-  padding: 0;
+  height: 100%;
 }
 
 /* BUTTONS */
@@ -205,19 +213,21 @@ th {
 }
 
 /* styling for homepage animation */
-.ml15 {
+.anime-text {
   font-weight: 800;
   font-size: 3.8em;
   font-family: shrikhand;
   text-transform: uppercase;
   letter-spacing: 0.5em;
+  margin-top: 8%;
 }
 
-.ml15 .animate {
+.anime-text .animate{
   display: inline-block;
   line-height: 1em;
 }
-.ml15 .animate .btn{
+.anime-text .animate{
   display: inline-block;
   line-height: 1em;
 }
+
