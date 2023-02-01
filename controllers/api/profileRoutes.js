@@ -11,6 +11,7 @@ router.get('/', async (req, res) => {
       where: {
         user_id: req.session.user_id
       },
+      include: [User],
       attributes: [
         'id',
         'name',
@@ -22,6 +23,7 @@ router.get('/', async (req, res) => {
     const goals = goalData.map((goal) => goal.get({ plain: true }));
     res.render('profile', {
         goals,
+        user: goals[0].user,
         logged_in: req.session.logged_in
     });
     } catch (err) {

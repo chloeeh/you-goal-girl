@@ -164,7 +164,8 @@ main {
 }
 
 /* BUTTONS */
-.my-login {
+/* .my-login { */
+button {
   font-size: large;
   background-color: orange;
   color: darkmagenta;
