@@ -1,5 +1,15 @@
 # You Goal Girl!
 
+<!-- add license badge -->
+## Table of contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Visual Presentation](#visual-presentation)
+- [Links](#links)
+
+
 ## Description
 
 You Goal Girl hopes to inspire any person to achieve their goals with a 90s-themed website where each user can add and view each goal. 
@@ -77,6 +87,8 @@ From the command line, run:
 
 Here's the [link to the video recording](HEROKU)
 
+## Visual Presentation
+[Walkthrough Video]()
 
 ## Credits
 
@@ -87,3 +99,8 @@ Resources used:
 ## License
 
 Please refer to the LICENSE in the repository.
+
+## Links 
+GitHub Repo: [https://github.com/chloeeh/you-goal-girl](https://github.com/chloeeh/you-goal-girl)
+
+Heroku Link: []()
