@@ -1,6 +1,7 @@
+// TODO: Future functionality
 async function editFormHandler(event) {
   event.preventDefault();
-  const goal_name = document.querySelector('#goal_name').value;
+  const name = document.querySelector('#goal_name').value;
   const description = document.querySelector('#description').value;
   const start_date = document.querySelector('#start_date').value;
   const end_date = document.querySelector('#end_date').value;
@@ -17,7 +18,7 @@ async function editFormHandler(event) {
   const response = await fetch(`/api/{{user.username}}/${id}`, {
     method: 'PUT',
     body: JSON.stringify({
-      goal_name,
+      name,
       description,
       start_date,
       end_date,
@@ -28,12 +29,12 @@ async function editFormHandler(event) {
   });
 
   // What happens if the response is ok?
-  // If the response is ok, that means that the dish was updated successfully. 
+  // If the response is ok, that means that the goal was updated successfully. 
   if (response.ok) {
     document.location.replace(`/{{}}/${id}`);
   } else {
-    alert('Failed to edit dish');
+    alert('Failed to edit goal');
   }
 }
 
-document.querySelector('.edit-dish-form').addEventListener('submit', editFormHandler);
+document.querySelector('.edit-goal-form').addEventListener('submit', editFormHandler);
