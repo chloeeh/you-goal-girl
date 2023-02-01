@@ -2,10 +2,8 @@ const router = require('express').Router();
 const { User, Goal } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// TODO: Remember to include withAuth,
-// TODO: /goal or / ??
 // Get all projects and JOIN with user data
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   try {
     const goalData = await Goal.findAll({
       where: {
@@ -31,9 +29,8 @@ router.get('/', async (req, res) => {
     }
 });
 
-// TODO: Remember to include withAuth,
 // GET single goal by ID  
-router.get('/goal/:id', async (req, res) => {
+router.get('/goal/:id', withAuth, async (req, res) => {
   try {
     const goalData = await Goal.findByPk(req.params.id, {
         include: [
@@ -55,9 +52,8 @@ router.get('/goal/:id', async (req, res) => {
     }
 });
 
-// TODO: Remember to include withAuth,
 // POST/CREATE new Post
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
     try {
       const newGoal = await Goal.create({
         ...req.body,
@@ -70,7 +66,7 @@ router.post('/', async (req, res) => {
     }
   });
   
-  // // TODO: Remember to include withAuth,
+  // // TODO: Future functionality
   // // DELETE Post
   // router.delete('/goal/:id', async (req, res) => {
   //   try {
