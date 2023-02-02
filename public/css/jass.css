@@ -24,18 +24,12 @@
   /**
    * Render the `main` element consistently in IE.
    */
-  main {
-    display: block;
-  }
+ 
   
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
   
   /* Grouping content
      ========================================================================== */
@@ -663,8 +657,8 @@
   }
   
   .my-5 {
-    margin-top: 1.625rem;
-    margin-bottom: 1.625rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   
   .my-auto {
@@ -985,7 +979,7 @@
   }
   
   .btn:hover {
-    background-color: #ffb048;
+    background-color: hsl(0, 0%, 100%);
   }
   
   .btn.btn-squared {
@@ -1009,12 +1003,12 @@
   }
   
   .btn.btn-primary {
-    background-color: #2d3e50;
-    color: #d9e9e8;
+    background-color: #ffdf75;
+    color: black;
   }
   
   .btn.btn-primary:hover {
-    background-color: #57779a;
+    background-color: #ffdf75;
   }
   
   .btn.btn-danger {
@@ -1165,15 +1159,12 @@
   }
   
   .container {
-    width: 85%;
+    width: 100%;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   
-  .container.container-fluid {
-    width: 92%;
-  }
   
   /* FLEX CONTENT */
   .flex-row {
@@ -1252,8 +1243,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -15px;
-    margin-right: -15px;
   }
   
   [class*='col-'] {

@@ -4,16 +4,18 @@ anime.timeline({loop: true})
         scale: [14,1],
         opacity: [0,1],
         easing: "easeOutCirc",
-        duration: 600,
-        delay: (el, i) => 600 * i
+        duration: 800,
+        delay: (el, i) => 800 * i
     }).add({
         targets: '.anime-text .animate',
         opacity: 0,
-        duration: 1000,
+        duration: 3000,
         easing: "easeOutExpo",
         delay: 1000
     
 });
+
+
 
 //eventlistener to handle 'get started'
 const getStarted = () => {
