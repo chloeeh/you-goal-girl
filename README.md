@@ -84,12 +84,6 @@ From the command line, run:
 
 - npm run start
 
-## Usage
-
-Here's the [link to the video recording](HEROKU)
-
-https://clj-yougoalgirl.herokuapp.com/
-
 ## Technologies Used
 
 * Node.js
@@ -102,9 +96,17 @@ https://clj-yougoalgirl.herokuapp.com/
 * dotenv
 * bcrypt
 * Heroku
+* anime.js
 
 ## Visual Presentation
-[Walkthrough Video]()
+
+Below are screenshots, which show each page of the website
+
+![Welcome Page](./public/assets/getStarted.png) 
+![Signup Page](./public/assets/loginSignup.png) 
+![Signup Page](./public/assets/addGoal.png.png) 
+![Signup Page](./public/assets/viewList.png) 
+![Signup Page](./public/assets/viewGoal.png) 
 
 ## Credits
 
@@ -112,6 +114,7 @@ Resources used:
 1) Bootcamp Pre-work Modules in 14-MVC
 2) Documentation linked in the homework activities
 3) stackoverflow
+4) [90s images](https://www.freevector.com/vector/90s)
 
 ## License
 
@@ -120,4 +123,6 @@ Please refer to the LICENSE in the repository.
 ## Links 
 GitHub Repo: [https://github.com/chloeeh/you-goal-girl](https://github.com/chloeeh/you-goal-girl)
 
-Heroku Link: []()
+Heroku Link: [Click to view the website!](https://clj-yougoalgirl.herokuapp.com/)
+
+
