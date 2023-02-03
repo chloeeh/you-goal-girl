@@ -50,5 +50,5 @@ document
 
 // EventListener for signup submit button
 document
-.querySelector('.signup-form')
+.querySelector('#signup-form')
 .addEventListener('submit', signupFormHandler);
