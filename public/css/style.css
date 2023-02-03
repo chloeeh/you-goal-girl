@@ -1,16 +1,20 @@
 :root {
-  --primary: #389393;
-  --secondary: #f5a25d;
+  --primary: #b9bbfd;
+  --lightPrimary: #c7c9ff;
+  /* --secondary: #f5a25d; */
+  --secondary: #f36079;
+  /* --secondary: #ffe46d; */
   --tertiary: #fa7f72;
   --quatrinary: #6c6b67;
-  --light: #ebebeb;
+  --lightYellow: #fff7c0c1;
+  --light: #ffffff;
   --dark: #182c23;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
 /* background image properties */
 body { 
-  background: url(../assets/background2.jpg) no-repeat center center fixed; 
+  background: url(../assets/background3.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,7 +22,7 @@ body {
 }
 
 body {
-  font-family: Arial;
+  font-family: shrikhand, Arial;
   /* margin: 0; */
   /* display: flex; */
   flex-direction: row;
@@ -35,12 +39,18 @@ header {
   color: var(--secondary);
   border-bottom-style: solid;
   width: 100%;
+  /* font-family: shrikhand; */
+  font-family: 'titan one';
+
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  
 }
 
 /* CARDS */
@@ -61,15 +71,27 @@ main {
   text-align: center;
 }
 
-/* LAYOUT
+/* LAYOUT */
 .container {
-  display: flex;
-  /* flex-flow: column wrap; */
-  /* align-content: flex-start;
-  align-items: center;
-} */
+  margin: 2rem;
+  font-family: nixie one, serif;
+}
+.yellowBg {
+  margin: 2rem;
+  display: inline;
+  padding: 3em;
+  border-radius: 2em;
+  background-color: var(--lightYellow);
+/* maybe add a different class name to add background */
+}
 
-.container-fluid{
+.btn {
+  display: flex;
+  justify-content: center;
+  font-family: nixie one, serif;
+}
+
+/* .container-fluid{
   padding: 0;
   display: flex;
   flex-flow: column wrap;
@@ -77,38 +99,49 @@ main {
 .img-fluid {
   max-width: 100%;
   height: 100%;
-}
+} */
 
 /* BUTTONS */
 /* .my-login { */
-button {
+/* button .btn {
   font-size: large;
   background-color: orange;
   color: darkmagenta;
   border-style: solid;
   border-color: darkmagenta;
   border-radius: 10px;
-}
+} */
 
 /* TABLE */
 table {
   border-radius: 15px;
   /* rounds only the corners of the table */
-  overflow:hidden
+  overflow:hidden;
+  border-color: var(--dark);
+  width: 75%;
 }
-td {
+.tableName{
+  font-size: 2rem;
+}
+.title {
+  font-size: 1.5rem;
   text-align: left;
-  color: white;
+  background-color:var(--dark);
+  color: var(--dark);
+  font-weight: bolder;
+}
+
+.content {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 tr {
-  background-color:darkmagenta;
-  color:white;
+  color:var(--dark);
+
 }
-th {
-  background-color: blue;
-  color: white;
-}
+
 
 /* 404 TEXT */
 .not-found {
@@ -119,19 +152,18 @@ th {
 /* styling for homepage animation */
 .anime-text {
   font-weight: 800;
-  font-size: 3.8em;
+  font-size: 5em;
+  color: var(--secondary);
   font-family: shrikhand;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  margin-top: 8%;
+  margin-top: 6rem;
+
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
 }
 
 .anime-text .animate{
   display: inline-block;
   line-height: 1em;
 }
-.anime-text .animate{
-  display: inline-block;
-  line-height: 1em;
-}
-

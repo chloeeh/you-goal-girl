@@ -1,30 +1,24 @@
-{{> page-header}}
-<section class = "d-flex flex-row flex-wrap">
-<img class="z-1 img-fluid position-absolute opacity-50" src="/assets/perGoal.jpg" alt="1990s themed image"/>
-  <div class = "flex-row row-3 align-items-center">
-    <div class=" flex-col goal-card my-3 justify-align-center z-3 position-relative">
-
-  {{!-- how to center the damn table... --}}
-      <div class="row card-body table-responsive">
-        <table class = "table table-bordered text-center">
+<div class="container">
+  <div class="row">
+    <div class="col yellowBg">
+      <table class = "table border border-dark text-center">
           <tr id="round-corner-top">
-            <th colspan="2">{{name}}</th>
+            <th colspan="2" class="tableName">{{name}}</th>
           </tr>
         <tr>
-          <td>Description</td>
-          <td>{{description}}</td>
+          <td class="title">Description</td>
+          <td class="content">{{description}}</td>
         </tr>
         <tr>
-          <td>Date Entered</td>
-          <td>{{format_date start_date}}</td>
+          <td class="title">Date Entered</td>
+          <td class="content">{{format_date start_date}}</td>
         </tr>
         <tr>
-          <td id="round-corner-b-l">Deadline</td>
-          <td id="round-corner-b-r">{{format_date end_date}}</td>
+          <td class="title" id="round-corner-b-l">Deadline</td>
+          <td class="content" id="round-corner-b-r">{{format_date end_date}}</td>
         </tr>
         </table>
-      </div>
-
     </div>
   </div>
-</section>
+
+</div>
