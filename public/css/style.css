@@ -23,13 +23,8 @@ body {
 
 body {
   font-family: shrikhand, Arial;
-  /* margin: 0; */
-  /* display: flex; */
   flex-direction: row;
   min-height: 100vh;
-  /* justify-content: flex-start; */
-  /* background-color: var(--quatrinary); */
-  /* background-image: url('../assets/perGoal.jpg'); */
 }
 
 header {
@@ -39,9 +34,8 @@ header {
   color: var(--secondary);
   border-bottom-style: solid;
   width: 100%;
-  /* font-family: shrikhand; */
   font-family: 'titan one';
-
+/* adds outline around text */
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
@@ -82,7 +76,6 @@ main {
   padding: 3em;
   border-radius: 2em;
   background-color: var(--lightYellow);
-/* maybe add a different class name to add background */
 }
 
 .btn {
@@ -90,27 +83,6 @@ main {
   justify-content: center;
   font-family: nixie one, serif;
 }
-
-/* .container-fluid{
-  padding: 0;
-  display: flex;
-  flex-flow: column wrap;
-}
-.img-fluid {
-  max-width: 100%;
-  height: 100%;
-} */
-
-/* BUTTONS */
-/* .my-login { */
-/* button .btn {
-  font-size: large;
-  background-color: orange;
-  color: darkmagenta;
-  border-style: solid;
-  border-color: darkmagenta;
-  border-radius: 10px;
-} */
 
 /* TABLE */
 table {
@@ -139,9 +111,7 @@ table {
 
 tr {
   color:var(--dark);
-
 }
-
 
 /* 404 TEXT */
 .not-found {
@@ -149,7 +119,7 @@ tr {
   color: #4B0082;
 }
 
-/* styling for homepage animation */
+/* HOMEPAGE ANIMATION */
 .anime-text {
   font-weight: 800;
   font-size: 5em;
@@ -158,7 +128,7 @@ tr {
   text-transform: uppercase;
   letter-spacing: 0.5em;
   margin-top: 6rem;
-
+/* adds outline to text */
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: black;
 }
