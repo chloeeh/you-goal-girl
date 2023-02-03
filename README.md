@@ -1,16 +1,14 @@
 # You Goal Girl!
 
-
-## License
-  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
+- [Technologies Used](#technologies-used)
 - [Visual Presentation](#visual-presentation)
+- [Credits](#credits)
+- [License](#license)
 - [Links](#links)
 
 
@@ -34,7 +32,7 @@ Here's how it works:
 
 - After logging in, the user can choose to log out at anytime by selecting the "logout" button either from their profile page or from one of their goal pages.
 
-Beyond the creative genius of the three colloborators on this project, the following requirements were met to bring the website to fruition:
+Beyond the creative genius of the three collaborators on this project, the following requirements were met to bring the website to fruition:
 
 * Use Node.js and Express.js to create a RESTful API.
 
