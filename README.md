@@ -77,12 +77,14 @@ From the command line, run:
 
 Here's the [link to the video recording](HEROKU)
 
+https://clj-yougoalgirl.herokuapp.com/
 
 ## Credits
 
 Resources used:
 1) Bootcamp Pre-work Modules in 14-MVC
 2) Documentation linked in the homework activities
+3) stackoverflow
 
 ## License
 
