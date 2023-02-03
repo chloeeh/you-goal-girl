@@ -24,18 +24,12 @@
   /**
    * Render the `main` element consistently in IE.
    */
-  main {
-    display: block;
-  }
+ 
   
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
   
   /* Grouping content
      ========================================================================== */
@@ -70,6 +64,7 @@
    */
   a {
     background-color: transparent;
+    text-decoration: none;
   }
   
   /**
@@ -420,12 +415,24 @@
   }
   
   a {
-    color: #1b89bc;
+    color: #ffffff;
+    /* background-color: #c7c9ff; */
+    text-decoration: none;
+  }
+  a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
     text-decoration: none;
   }
   
   a:hover {
-    color: #065b83;
+    color: #787878;
     text-decoration: underline;
   }
   
@@ -663,8 +670,8 @@
   }
   
   .my-5 {
-    margin-top: 1.625rem;
-    margin-bottom: 1.625rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   
   .my-auto {
@@ -858,6 +865,10 @@
     padding-top: 1.625rem;
     padding-bottom: 1.625rem;
   }
+
+  .table-bordered{
+    border-color: black;
+  }
   
   .text-uppercase {
     text-transform: uppercase !important;
@@ -888,7 +899,7 @@
   }
   
   .text-danger {
-    color: #e64c66 !important;
+    color: #ee8294 !important;
   }
   
   .text-default {
@@ -912,7 +923,7 @@
   }
   
   .text-link {
-    color: #1b89bc !important;
+    color: #000000 !important;
   }
   
   /* BACKGROUND UTILS */
@@ -925,7 +936,7 @@
   }
   
   .bg-danger {
-    background-color: #e64c66 !important;
+    background-color: #ee8294 !important;
   }
   
   .bg-light {
@@ -945,7 +956,7 @@
   }
   
   .bg-link {
-    background-color: #1b89bc !important;
+    background-color: #000000 !important;
   }
   
   /* DISPLAY */
@@ -978,14 +989,14 @@
     font-size: 1rem;
     border-radius: 0.3rem;
     border: 1px solid transparent;
-    outline: none;
+    /* outline: none; */
     color: #1a1a1a;
-    background-color: #aeaeae;
+    background-color: #ffb048;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   }
   
   .btn:hover {
-    background-color: #cecece;
+    background-color: hsl(0, 0%, 100%);
   }
   
   .btn.btn-squared {
@@ -1009,21 +1020,21 @@
   }
   
   .btn.btn-primary {
-    background-color: #2d3e50;
-    color: #d9e9e8;
+    background-color: #ffdf75;
+    color: black;
   }
   
   .btn.btn-primary:hover {
-    background-color: #57779a;
+    background-color: #ffdf75;
   }
   
   .btn.btn-danger {
-    background-color: #e64c66;
+    background-color: #ee8294;
     color: #ffffff;
   }
   
   .btn.btn-danger:hover {
-    background-color: #ee8294;
+    background-color: #f5a6b3;
   }
   
   .btn.btn-info {
@@ -1072,12 +1083,12 @@
   }
   
   .btn.btn-link {
-    background-color: #1b89bc;
+    background-color: #000000;
     color: #ffffff;
   }
   
   .btn.btn-link:hover {
-    background-color: #31a9e1;
+    background-color: #757575;
   }
   
   .card {
@@ -1131,13 +1142,13 @@
     background-position-x: 98%;
     background-position-y: 50%;
   }
-  
+/*   
   form label,
   form .form-label {
     display: inline-block;
     font-size: 1.2rem;
     margin: 0.625rem 0 0.25rem 0.3rem;
-  }
+  } */
   
   form .form-input {
     width: 100%;
@@ -1165,15 +1176,12 @@
   }
   
   .container {
-    width: 85%;
+    width: 100%;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   
-  .container.container-fluid {
-    width: 92%;
-  }
   
   /* FLEX CONTENT */
   .flex-row {
@@ -1252,8 +1260,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -15px;
-    margin-right: -15px;
   }
   
   [class*='col-'] {

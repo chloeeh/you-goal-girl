@@ -1,47 +1,49 @@
-
-{{> page-header}}
-<div class="container-fluid">
-    <img class="z-1 img-fluid position-absolute opacity-25" src="/assets/homepage.jpg" alt="1990s themed background"/>
-</div>
-  <div class="justify-space-between-md py-10 z-3 position-relative">
-    <div class="login-card">
+<div class="container">
+  <div class="row">
+    {{!-- login form --}}
+    <div class="col yellowBg align-center">
       <h2 class="page-title">Login</h2>
-      <form class="form login-form">
-        <div class="form-group">
-          <label for="email-login">Email:</label>
-          <input class="form-input" type="text" id="email-login" />
+        <form class="form login-form">
+        <div class="form-floating">
+          <input type="email" class="form-control" id="email-login" placeholder="name@example.com">
+          <label for="email-login">Email: </label>
         </div>
-        <div class="form-group">
-          <label for="password-login">Password:</label>
-          <input class="form-input" type="password" id="password-login" />
+        <br />
+        <div class="form-floating">
+          <input type="password" class="form-control" id="password-login" placeholder="Password">
+          <label for="password-login">Password: </label>
         </div>
-        <div class="form-group">
-          <button class="btn btn-primary" type="submit">login</button>
+        <br />
+        <div class="form-floating">
+          <button class="btn btn-danger" type="submit">Login</button>
         </div>
-      </form>
+        </form>
     </div>
-    
-    <div class="login-card flex-wrap">
+
+    {{!-- sign-up form --}}
+    <div class="col yellowBg align-center">
       <h2 class="page-title">Signup</h2>
-      <form class="form signup-form">
-        <div class="form-group">
-          <label for="username-signup">Username:</label>
-          <input class="form-input" type="text" id="username-signup" />
+        <form class="form signup-form">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="username-signup" placeholder="type username here">
+          <label for="username-signup">Username: </label>
         </div>
-        <div class="form-group">
-          <label for="email-signup">Email:</label>
-          <input class="form-input" type="text" id="email-signup" />
+        <br />
+        <div class="form-floating">
+          <input type="email" class="form-control" id="email-signup" placeholder="name@example.com">
+          <label for="email-signup">Email: </label>
         </div>
-        <div class="form-group">
-          <label for="password-signup">Password:</label>
-          <input class="form-input" type="password" id="password-signup" />
+        <br />
+        <div class="form-floating">
+          <input type="password" class="form-control" id="password-signup" placeholder="Password">
+          <label for="password-signup">Password: </label>
         </div>
-        <div class="form-group">
-          <button class="btn btn-primary" type="submit">signup</button>
+        <br />
+        <div class="form-floating">
+          <button class="btn btn-danger" type="submit">Signup</button>
         </div>
       </form>
     </div>
   </div>
-
-
+</div>
 <script src="./js/login.js"></script>
