@@ -1,16 +1,18 @@
 # You Goal Girl!
 
+
 ## License
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Technologies](#technologies-used)
-  - [Credits](#credits)
-  - [License](#license)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Visual Presentation](#visual-presentation)
+- [Links](#links)
+
 
 ## Description
 
@@ -101,6 +103,9 @@ https://clj-yougoalgirl.herokuapp.com/
 * bcrypt
 * Heroku
 
+## Visual Presentation
+[Walkthrough Video]()
+
 ## Credits
 
 Resources used:
@@ -111,3 +116,8 @@ Resources used:
 ## License
 
 Please refer to the LICENSE in the repository.
+
+## Links 
+GitHub Repo: [https://github.com/chloeeh/you-goal-girl](https://github.com/chloeeh/you-goal-girl)
+
+Heroku Link: []()
