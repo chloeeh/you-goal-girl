@@ -76,7 +76,7 @@ main {
   margin: 2rem;
   font-family: nixie one, serif;
 }
-.col {
+.yellowBg {
   margin: 2rem;
   display: inline;
   padding: 3em;
@@ -117,21 +117,31 @@ table {
   border-radius: 15px;
   /* rounds only the corners of the table */
   overflow:hidden;
+  border-color: var(--dark);
+  width: 75%;
 }
-td {
+.tableName{
+  font-size: 2rem;
+}
+.title {
+  font-size: 1.5rem;
   text-align: left;
-  color: var(--light);
+  background-color:var(--dark);
+  color: var(--dark);
   font-weight: bolder;
 }
 
+.content {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
 tr {
-  background-color:var(--lightPrimary);
-  color:var(--light);
+  color:var(--dark);
+
 }
-th {
-  background-color:var(--quatrinary);
-  color: white;
-}
+
 
 /* 404 TEXT */
 .not-found {

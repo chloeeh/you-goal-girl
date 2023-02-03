@@ -64,6 +64,7 @@
    */
   a {
     background-color: transparent;
+    text-decoration: none;
   }
   
   /**
@@ -414,12 +415,24 @@
   }
   
   a {
-    color: #1b89bc;
+    color: #ffffff;
+    /* background-color: #c7c9ff; */
+    text-decoration: none;
+  }
+  a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
     text-decoration: none;
   }
   
   a:hover {
-    color: #065b83;
+    color: #787878;
     text-decoration: underline;
   }
   
@@ -852,6 +865,10 @@
     padding-top: 1.625rem;
     padding-bottom: 1.625rem;
   }
+
+  .table-bordered{
+    border-color: black;
+  }
   
   .text-uppercase {
     text-transform: uppercase !important;
@@ -906,7 +923,7 @@
   }
   
   .text-link {
-    color: #1b89bc !important;
+    color: #000000 !important;
   }
   
   /* BACKGROUND UTILS */
@@ -939,7 +956,7 @@
   }
   
   .bg-link {
-    background-color: #1b89bc !important;
+    background-color: #000000 !important;
   }
   
   /* DISPLAY */
@@ -1066,12 +1083,12 @@
   }
   
   .btn.btn-link {
-    background-color: #1b89bc;
+    background-color: #000000;
     color: #ffffff;
   }
   
   .btn.btn-link:hover {
-    background-color: #31a9e1;
+    background-color: #757575;
   }
   
   .card {
