@@ -18,10 +18,14 @@ router.get('/', withAuth, async (req, res) => {
         'end_date'
       ],
     });
+
+    const userData = await User.findByPk(req.session.user_id);
+    const user = userData.get({plain: true});
     const goals = goalData.map((goal) => goal.get({ plain: true }));
+
     res.render('profile', {
         goals,
-        user: goals[0].user,
+        user: user,
         logged_in: req.session.logged_in
     });
     } catch (err) {

@@ -1,6 +1,10 @@
 # You Goal Girl!
 
-<!-- add license badge -->
+
+## License
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -60,9 +64,6 @@ Beyond the creative genius of the three colloborators on this project, the follo
 
 * Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-Below are images of each website page
-
-
 ## Installation
 
 From the command line, run:
@@ -87,6 +88,21 @@ From the command line, run:
 
 Here's the [link to the video recording](HEROKU)
 
+https://clj-yougoalgirl.herokuapp.com/
+
+## Technologies Used
+
+* Node.js
+* Express.js
+* MySQL
+* Sequelize
+* express-session
+* connect-session-sequelize
+* Handlebars.js
+* dotenv
+* bcrypt
+* Heroku
+
 ## Visual Presentation
 [Walkthrough Video]()
 
@@ -95,6 +111,7 @@ Here's the [link to the video recording](HEROKU)
 Resources used:
 1) Bootcamp Pre-work Modules in 14-MVC
 2) Documentation linked in the homework activities
+3) stackoverflow
 
 ## License
 
